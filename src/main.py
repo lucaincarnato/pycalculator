@@ -47,6 +47,7 @@ class App():
         deny = tk.Button(frame, text="<-", command=cancel)
         deny.grid(row=5, column=0, padx=10, pady=10, sticky="WEN")
 
+        #Function to save the equation in a txt file
         def save():
             with open("test.txt", 'a') as file:
                 file.write(str(equation))
